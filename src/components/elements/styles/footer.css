@@ -9,6 +9,9 @@ margin-right: auto;
     list-style-type: none;
 
 }
+.social-media{
+    background-color: rgb(216, 211, 205);   
+}
 .social-media ul{
     align-items: center;
     justify-content: center;
