@@ -1,0 +1,38 @@
+.portfolio-image{
+    height: 350px;
+    width: 350px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    float: left;
+    border-color: grey;
+    border: 2px solid grey;
+    box-shadow: 1px 1px 1px solid blue;
+    shape-outside: circle(50%);
+}
+.portfolio-image:hover{
+    border-color: aqua;
+    opacity: 0.9;
+}
+.description{
+    float: right;
+    position: relative;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.image-div{
+    float: left;
+}
+.intersted{
+    align-items: flex-start;
+}
+.button-primary{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 2px;
+}
+.portfolio-header{
+  text-decoration: underline;
+  text-shadow: 1px 1px #854fee;
+}

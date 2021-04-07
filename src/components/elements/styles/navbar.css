@@ -1,0 +1,35 @@
+.header .main-menu .navbar{
+    padding: 0rem 1.75rem 0 5rem;
+    background-color: whitesmoke;
+}
+
+.header .main-menu .nav-item .nav-link{
+    font-family:"times New Roman', Times, serif", normal;
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-weight: 500;
+    padding: 1.75rem;
+    color: rgb(115, 117, 122);
+    font-size: 1.2rem;
+}
+
+.header .main-menu .navbar-nav .active a{
+    background:linear-gradient(90deg,#4458dc 0%, #854fee 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+}
+
+.header .main-menu .navbar-nav a:hover{
+    background:linear-gradient(90deg,#4458dc 0%, #854fee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header .main-menu a .text{
+    background:linear-gradient(90deg,#4458dc 0%, #854fee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

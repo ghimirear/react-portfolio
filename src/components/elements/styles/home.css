@@ -1,0 +1,82 @@
+.image-div{
+background-color: rgb(216, 211, 205);
+width: 100vw;
+
+}
+
+.image-section{
+margin-left: 30px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.my-image{
+    height: 290px;
+    width: 280px;
+    border-radius: 50%;
+    border : 1px solid #854fee;
+    border-color: 2px solid #854fee;
+}
+.my-image:hover{
+    opacity: 0.9;
+}
+
+.card{
+    height: 350px;
+    width: 300px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 0;
+    background-color: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 50%;
+}
+.card-text{
+    margin-bottom: 20px;
+}
+.card-text:hover{
+  font-size: 1.4rem;
+  text-shadow: #4458dc;
+}
+.hide{
+    display : none;
+}
+.button-primary{
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 40px;
+    width: 80px;
+    float: right;
+    border: 0;
+    background: linear-gradient(90deg,#4458dc 0%, #854fee 100%);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 12px;
+}
+.button-primary:hover{
+    background: azure;
+    color: rgb(138, 10, 243);
+    
+}
+.about{
+    margin-left: 30px;
+    margin-top: 20px;
+    align-items: flex-start;
+    text-align: left;
+    float: right;
+}
+.description-section{
+    text-align: left;
+    justify-content: space-around;
+    float: right;
+}
+.resume-div{
+   float:left;
+   margin-left: 20%;
+}
+.port-header{
+    text-shadow: 1px 1px #ad8bf1;
+}
