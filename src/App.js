@@ -22,9 +22,9 @@ function App() {
         <NavBar />
         <ScrollToTop />
         <Switch>
-          < Route  path ={["/", "*"]}component={Home} />  
-        <Route exact path="/portfolio"  component={Portfolio} />  
-        <Route exact path="/contact" component={Contact} />
+          < Route  path ={["/", "*"]}> < Home />  </Route>
+        <Route exact path="/portfolio"  ><Portfolio />  </Route>
+        <Route exact path="/contact"> <Contact /> </Route>
         </Switch >
         <Footer />
       </div>
