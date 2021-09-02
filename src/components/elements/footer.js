@@ -1,23 +1,30 @@
 import React from "react";
 import "./styles/footer.css"
-import Row from "./row"
+import "../elements/styles/home.css";
+import { Container, Col} from "react-bootstrap";
+import pdf from "../images/resume1.pdf";
+import icon from "../images/download.svg"
 function Footer (){
 return (
-<Row>
-    <div className=" col col-12 offset-md-3 offset-xl-3 ">
-       <div className ="footer-container ml-xlg-5">
-        <div className="social-media align-center justify-center ">
+    <section>
+<footer>
+    <Col sm={12} md={12} lg={12} xl={12} xxl={12} style={{width:"100vw", margin:"0px" }} >
+       <Container className="container-fluid footer-container">
+        <div className="social-media align-center justify-center co">
             <ul className="footer-list align-center justify-center">
-                <li> <a href="https://www.facebook.com/ghimirear/" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
-                <li> <a href="https://www.instagram.com/ghimirear/" target="_blank"><i className="fab fa-instagram"></i></a></li>
+                <li><p>&copy;Arjun Ghimire 2021 </p></li>
                 <li> <a href="https://www.linkedin.com/in/arjun-ghimire-8291171b8/" target="_blank"><i className="fab fa-linkedin"></i></a></li>
-                <li> <a href="https://github.com/ghimirear" target="_blank"><i className="fab fa-github"></i></a></li>
-            </ul>
-        </div>
-       </div>
-    </div>
-</Row>
+                <li> <a href="https://github.com/ghimirear" target="_blank" className="github-icon"><i className="fab fa-github"></i></a></li>
 
+               <li> <a href={pdf} target="_blank" > <img src={icon} alt="resume download"></img></a> </li>
+                
+            </ul>
+           
+        </div>
+        </Container>
+    </Col>
+    </footer>
+    </section>
    
 )
 }

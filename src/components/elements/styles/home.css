@@ -1,82 +1,263 @@
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(75, 4, 4, 0.982),
+    rgba(42, 10, 10, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgb(58, 1, 1, 0.9999),
+    rgba(25, 8, 110, 0.863)
+  );
+
+  --imp-text-color: #9901ff;
+}
+
+.purple {
+  color: var(--imp-text-color) !important;
+}
+
+
 .image-div{
-background-color: rgb(216, 211, 205);
-width: 100vw;
+background: linear-gradient(
+    to bottom left,
+    rgba(70, 0, 0, 0.982),
+    rgba(24, 13, 56, 0.904)
+  );
+width: auto;
 
 }
 
-.image-section{
-margin-left: 30px;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-}
-.my-image{
-    height: 290px;
-    width: 280px;
-    border-radius: 50%;
-    border : 1px solid #854fee;
-    border-color: 2px solid #854fee;
-}
-.my-image:hover{
-    opacity: 0.9;
-}
-
-.card{
-    height: 350px;
-    width: 300px;
-    text-transform: uppercase;
-    font-weight: 500;
-    border: 0;
-    background-color: none;
-    color: whitesmoke;
-    cursor: pointer;
-    transition: 0.6s;
-    border-radius: 50%;
-}
-.card-text{
-    margin-bottom: 20px;
-}
-.card-text:hover{
-  font-size: 1.4rem;
-  text-shadow: #4458dc;
-}
-.hide{
-    display : none;
-}
 .button-primary{
     text-transform: uppercase;
     font-weight: 500;
     height: 40px;
-    width: 80px;
-    float: right;
-    border: 0;
+    width: 90px;
+    /* float: right;  */
+     border: 0;
     background: linear-gradient(90deg,#4458dc 0%, #854fee 100%);
     color: whitesmoke;
     cursor: pointer;
     transition: 0.6s;
     border-radius: 12px;
+    margin-left: 0;
 }
 .button-primary:hover{
     background: azure;
     color: rgb(138, 10, 243);
     
 }
-.about{
-    margin-left: 30px;
-    margin-top: 20px;
-    align-items: flex-start;
+
+
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  #tsparticles {
+    position: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .home-header {
+    padding-top: 80px !important;
+  }
+  
+  .home-section, .home-about-section {
+    position: relative;
+    z-index: +1;
+    background-image: var(--image-gradient), url() ;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+    background-position: fixed;
+  }
+  
+  .home-content {
+    padding: 9rem 0 2rem !important;
+    color: whitesmoke;
     text-align: left;
-    float: right;
-}
-.description-section{
+  }
+  
+  .heading {
+    font-size: 2.4em !important;
+    padding-left: 50px !important;
+  }
+  
+  .heading-name {
+    font-size: 2.5em !important;
+    padding-left: 45px !important;
+  }
+  
+  .main-name {
+    color: #fff3f3;
+  }
+  
+  .Typewriter__wrapper {
+    font-size: 2.2em !important;
+    color: #6b00a8 !important;
+    font-weight: 600 !important;
+  }
+  .Typewriter__cursor {
+    font-size: 2.4em !important;
+    color: #5e0094 !important;
+  }
+  
+  @media (max-width: 767px) {
+    .Typewriter__wrapper {
+      font-size: 1.4em !important;
+      font-weight: 500 !important;
+      position: absolute !important;
+    }
+    .Typewriter__cursor {
+      display: none !important;
+    }
+  }
+  
+  
+  @media (max-width: 767px) {
+    .myAvtar {
+      padding-top: 2em !important;
+      padding-bottom: 2em !important;
+    }
+    .home-about-section{
+      margin-bottom: 100px;
+    }
+  }
+  
+  .home-about-section {
+    position: relative;
+    padding-bottom: 70px !important;
+    padding-top: 70px !important;
+    
+  }
+  
+  .home-about-description {
+    color: white !important;
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+    text-align: center;
+  }
+  
+  .home-about-body {
+    padding-top: 50px;
+    font-size: 1.2em !important;
     text-align: left;
-    justify-content: space-around;
-    float: right;
-}
-.resume-div{
-   float:left;
-   margin-left: 20%;
-}
-.port-header{
-    text-shadow: 1px 1px #ad8bf1;
-}
+  }
+  
+  .home-about-social {
+    text-align: center !important;
+    padding-top: 25px;
+    color: white !important;
+    margin-bottom: 40px;
+  }
+  
+  .home-about-social-links {
+    justify-content: center !important;
+    padding-top: 15px !important;
+    /* display: inline-block !important; */
+    position: relative !important;
+    padding-inline-start: 0 !important;
+  }
+  
+  .home-social-icons {
+    position: relative !important;
+    /* display: inline-block !important; */
+    width: 50px !important;
+    height: 50px !important;
+    text-align: center !important;
+    font-size: 1.7em !important;
+    line-height: 2.3rem !important;
+    background: rgba(255, 255, 255, 0.972) !important;
+    border-radius: 50% !important;
+    transition: 0.5s !important;
+  }
+  
+  @media (min-height: 769px){
+    .home-about-section{
+      bottom: 200px;
+    }
+  }
+  
+  
+  /* --------- */
+  /* Footer */
+  /* --------- */
+  .footer {
+    background-color: rgb(10, 4, 22);
+    bottom: 0 !important;
+    padding-top: 10px !important;
+    padding-bottom: 8px !important ;
+  }
+  .footer-copywright {
+    text-align: center !important;
+  }
+  
+  .footer-body {
+    text-align: center !important;
+  }
+  
+  @media (max-width: 767px) {
+    .footer-copywright {
+      text-align: center !important;
+    }
+  
+    .footer-body {
+      text-align: center !important;
+    }
+  }
+  
+  .footer h3 {
+    font-size: 1em;
+    color: white !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+  }
+  .footer-icons {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    padding: 0 !important;
+  }
+  
+  .blockquote-footer {
+    color: #a588c0 !important;
+  }
+  @media(max-width:375px){
+    .home-about-social{
+      margin-bottom: 50%;
+    }
+  }

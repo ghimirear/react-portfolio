@@ -1,64 +1,98 @@
-import React from "react";
-import Row from "../elements/row";
-import  Myimage from'../images/myimage.jpg'
 import "../elements/styles/home.css";
-import  Resume from "../images/resume.pdf"
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import Particle from "../elements/Particle";
+import emailLogo from "../images/email.svg"
+import phoneLogo from "../images/phone.svg"
+import Type from "../elements/Type";
+import "../elements/styles/portfolio.css";
+
 function Home() {
-    return (
+  return (
+    <section>
+      <Container fluid="true" className="home-section" id="home">
+        <Particle />
+        
+        <div>
+          <Row>
+            <Col md={12} lg={12} xl={12} xxl={12} className="home-header pl-0 align-self-start ">
+            <h1 className="text-center mt-5 purple m-2"> Thank's for stopping by!</h1>
+              <Container fluid="true" className="home-content">
+                
+              <h1 style={{ paddingBottom: 15 }} className="heading text-center">
+                Hi There! <span className="wave">👋🏻</span>
+              </h1>
+
+              <h1 className="heading-name align-center text-center">
+                I'm
+                <strong className="main-name"> Arjun Ghimire</strong>
+              </h1>
+
+              <div style={{ padding: 50, textAlign: "center" }} className="mb-3">
+                <Type />
+              </div>
+              </Container>
+            </Col>
+
+            <Col md={5} style={{ paddingBottom: 20 }}>
+            </Col>
+          </Row>
+        </div>
+        <container fluid className="home-about-section " id="about">
+      
         <Row>
-            <div  className=" col col-xs-12 col-md-12 col-sm-12 align-center justify-center offset-xl-1 ">   
-            <div className="image-div align-center justify-center">
-                <div className="image-section ml-xl-5 align-center justify-center">
-                    <div className="image ml-xl-5 ml-lg-5">
-                    <h2 className="about-me text-uppercase mt-2">ABOUT ME</h2>
-                    <div className="mt-2" >
-                        <img  className="fluid my-image" src={Myimage} alt="arjun ghimire " />
-                        <h4 className="card-text mb-5 mt-3">Arjun Ghimire</h4>
-                    </div>
-                    <div className="resume-div">
-                    <a href= {Resume} className="align-left" target="blank"> <button className="button-primary align-left">resume</button></a>
-                    </div>
-                    </div> 
-                    <div className="about ml-xl-5 ml-lg-5">
-                    <span> <h4 className="mt-3">Hello World!!</h4>
-                        <hr />
-                        <p className=" ml-xl-4">I'am a </p>
-                        <h5 className="">Full-Stack Web Developer </h5>
-                     </span>
-                     <p className="about ml-xl-5 ml-lg-5 mr-2">I'am from Mryland Baltimore area. I like building  <br />
-                        interactive web app. This is just a begining <br />
-                        of web development. Actually I am from Nepal <img src="https://img.icons8.com/color/48/000000/nepal.png" style={{height:"18px", width:"18px"}}/> 
-                       . Ever since I moved here I <br/>
-                         wanted to change my careerand along the way I found <br />
-                         this coding program. Long way to go but  this is my  <br />
-                         effort that I would like to share.
-                  </p> 
-                   
-                     <div className="skills-container">          
-                    <ul style={{listStyleType: "none", fontWeight: 500, float:'left'}} className="mt-2">
-                        <li> <span className="port-header"> Name </span> :<span style={{color:"blue"}}> Arjun Ghimire</span></li>
-                        <li><span className="port-header"> Age </span> :<span style={{color:"blue"}}>  26</span></li>
-                        <li><span className="port-header">Email </span> :<span style={{color:"blue"}} >  ghimirearjun15@gmail.com</span></li>
-                        <li><span className="port-header"> Phone </span> :<span style={{color:"blue"}}> +1(443)-355-7644</span></li>
-                        <li><span className="port-header"> From </span> :<span style={{color:"blue"}}>  Baltimore Maryland</span></li>
-                    </ul>
-                    <ul style={{listStyleType: "none", fontWeight: 500, float:'right'}} className="mr-3">
-                    <h4 style={{textDecoration: "underline"}} className=" portfolio-header">Skills:</h4> 
-                        <li>HTML/CSS</li>
-                        <li>Javascript</li>
-                        <li>Jquery</li>
-                        <li>Node/Express</li>
-                        <li>Mysql/Sequelize</li>
-                        <li>MongoDB</li>
-                        <li>React</li>
-                        <li>MERN</li>
-                    </ul>
-                    </div>
-                    </div>  
-                </div>  
-            </div>
-            </div>
+          <Col md={12}  xl={12} xxl={12} className="home-about-description">
+            <Container className="mb-5 mt-5">
+            <h1 style={{ fontSize: "2.6em" }}>
+              <span className="purple"> About </span> Me
+            </h1>
+            <p className="line-height-2" style={{fontFamily:"sans-serif, roboto, ", fontSize:"1.5em"}}>  
+                            Full-Stack Web Developer, recently earned 
+                             certificate from <i> The George Washington University</i> <br />
+                            in Full-Stack web development. Have done bachelor in  pharmacy from <br />
+                            <i>Chitwn Medical College, Nepal </i>   and I am in a transition to web development. <br/>
+                            Seeking an oppertunity where I can apply new skillsets and grow  along with the company. <br/>
+                            Have experience in creating full stack app using <strong class="strong">Node, Express, React, MongoDB, Javascript, HTML and CSS.</strong> <br/>
+                             Enjoy working on both back end and front end of the application. Do visit my portfolio section for a <br />
+                            representative  sample of technologies I've utilized in my projects throughout the bootcamp.</p>
+
+              
+          
+              </Container>
+          </Col>
+
         </Row>
-    )
+        <Row>
+          <Col md={12} xl={12} xxl={12} className="home-about-social align-self-left ">
+            <h1>Stay Connected</h1>
+            <ul className="home-about-social-links d-flex flex-column mb-5">
+              
+              <li className="social-icons">
+               
+                 <h6 classNmae="purple">
+               <img src={emailLogo}  alt={"email logo"}/>
+                <a href="#">  <strong style={{ fontSize:"1.1em"}} className="purple" >: ghimirearjun15@gmail.com</strong> </a> </h6 > 
+              </li>
+              <li className="social-icons">
+              <h6>
+               <img src={phoneLogo}  alt={"phone logo"}/>
+                <a href="#">  <strong style={{letterSpacing:"2px", fontSize:"1.2em"}} className="purple">: +1 (443)-355-7644</strong> </a> </h6 > 
+              </li>
+              
+            </ul>
+          
+          </Col>
+        </Row>
+      
+    </container>
+
+
+      </Container>
+      <Container className="mb-5">
+          
+           </Container>
+    </section>
+  );
 }
+
 export default Home;

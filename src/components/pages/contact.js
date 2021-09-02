@@ -1,22 +1,38 @@
 import React from "react";
 import "../elements/styles/contact.css"
-import Row from "../elements/row";
+import{Card, Container} from "react-bootstrap";
+import Particle from "../elements/Particle";
+import Tilt from "react-parallax-tilt";
 function Contact (){
 return(
-    <Row>
-    <div className="col col-12 col-lg-offset-2 col-xl-offset-2">
-    <div className="contact-section" >
-    <h1 className="text text-uppercase">contact us</h1>
+   
+      <section>
+          
+        <Container fluid="true" className="home-section  align-self-center contact-section " style={{height:"100vh"}}>
+        <Particle style={{ ZIndex:"-99999"}}/>
+      
+     
+    <Container>
+    
+    <Card className=" card align-items-center align-self-center m-5 z-depth-1 " >
+   
+    <h1 className="purple text-uppercase mt-5">contact us</h1>
     <div className="line"></div>
-    <form className=" form contact-form" action="https://formspree.io/f/moqprajl" method="POST" > 
+    <Tilt>
+    <form className=" form contact-form mt-5" action="https://formspree.io/f/moqprajl" method="POST" > 
     <input type="text"name="name" class="name contact-form-text" placeholder="your name" required />
     <input type="text" name="email" class="email contact-form-text" placeholder="your email" required />
      <textarea type="text"name="message" class=" message contact-form-text" placeholder="message" required></textarea>
-     <input type="submit" className="contact-form-btn button-primary" value="send" />
+     <input type="submit" className="contact-form-btn button-primary mt-5" value="send" />
     </form>
-  </div>
-  </div>
-  </Row>
+    </Tilt>
+  </Card >
+  
+  </Container>
+
+  </Container>
+  </section>
+ 
 )
 }
 export default Contact;

@@ -1,14 +1,7 @@
 .portfolio-image{
-    height: 350px;
-    width: 350px;
-    margin-top: 20px;
-    margin-right: 20px;
-    border-radius: 50%;
-    float: left;
-    border-color: grey;
-    border: 2px solid grey;
-    box-shadow: 1px 1px 1px solid blue;
-    shape-outside: circle(50%);
+    border-color: rgb(255, 254, 254);
+    border: 2px solid rgb(216, 216, 216);
+    box-shadow: 1px 1px 1px solid blue; 
 }
 .portfolio-image:hover{
     border-color: aqua;
@@ -24,15 +17,49 @@
 .image-div{
     float: left;
 }
-.intersted{
-    align-items: flex-start;
-}
-.button-primary{
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 2px;
-}
+
+/* .button-primary{
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 40px;
+    width: 90px;
+    /* float: right; */
+    /* border: 0;
+    background: linear-gradient(90deg,#4458dc 0%, #854fee 100%);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 12px;
+    margin-left: 0;
+} */ */
 .portfolio-header{
   text-decoration: underline;
   text-shadow: 1px 1px #854fee;
+}
+/* .button-primary:hover{
+    background: azure;
+    color: rgb(138, 10, 243);
+    
+} */
+.portfolio-image{
+    margin-left: 20px;
+    width: 320px;
+    height: 200px;
+    margin-top: 10px;
+}
+.card{
+    margin: 20px 10px ;
+    height:655px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-right: 10;
+    margin-top: 10;
+}
+@media (max-width:375px){
+    .portfolio-image{
+        width: 259px;
+        margin-left: 0;
+        margin: 0;
+    }
+   
 }

@@ -6,14 +6,63 @@
     width: 100%;
 }
 .contact-section{
-    height: 70vh;
+  align-self: center;
+  align-items: center;
+  justify-items: center;
+  margin-left: auto;
+
+}
+.name, .email{
+    height:40px
 }
 .name, .email, .message{  
-    width: 50%;
+    width: 365px;
     margin-top: 20px; 
+    border-radius: 5px;
+    align-items: center;
+    background: black;
+    color:whitesmoke;
+    outline: none;
+    border: none;
+    
 }
 
-.contact-form-btn{
-    margin: 20px;
-}
+.card{
 
+    all: unset;
+    padding: 5px;
+    align-self: center;
+    width: 400px;
+    height: 725px;
+    background: linear-gradient(
+    to bottom left,
+    rgb(58, 1, 1, 0.8999),
+    rgba(25, 8, 110, 0.8563));
+    transform: translate(0%, 0);
+    margin: 10px;
+    box-shadow: 2px 2px 2px 3px rgb(153, 76, 76, 0.5);
+    color: whitesmoke;
+    z-index: 999999999;
+    padding: 5px;
+       
+}
+@media (max-width:375px){
+.card{
+    margin: 10px 15px ;
+    width: 100vw;
+    transform: translate(-10%, 0);
+    margin-bottom: 20px;
+    height: auto;
+    margin-left: 5px;
+}
+.card:nth-child(3){
+    margin-bottom: 200px;
+}
+.Container{
+  margin: 0px , 5px;
+
+}
+.email, .name, .message{
+    width: auto;
+}
+}
