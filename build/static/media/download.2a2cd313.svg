@@ -1,0 +1,5 @@
+<svg stroke="currentColor" fill="#008000" stroke-width="2"
+ viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="3em"
+  xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#008000">
+</circle><polyline points="8 12 12 16 16 12" ></polyline>
+<line x1="12" y1="8" x2="12" y2="16"></line></svg >
