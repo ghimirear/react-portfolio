@@ -12,7 +12,7 @@ function App() {
   const [load, upadateLoad] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      upadateLoad(false);
+      upadateLoad(true);
     }, 1200);
   }, []);
   return (
@@ -21,11 +21,10 @@ function App() {
       <div className="App mb-0" id={load ? "no-scroll" : "scroll"}>
         <NavBar />
         <ScrollToTop />
-       
         <Switch>
-          < Route exact path = "/" > <Home /> </Route>
-        <Route exact path="/portfolio" > <Portfolio /> </Route> 
-        <Route exact path="/contact"> < Contact/> </Route>
+          < Route exact path = "/" component={Home} />  
+        <Route exact path="/portfolio"  component={Portfolio} />  
+        <Route exact path="/contact" component={Contact} />
         </Switch >
         <Footer />
       </div>

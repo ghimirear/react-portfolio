@@ -71,12 +71,12 @@ function Home() {
                
                  <h6 classNmae="purple">
                <img src={emailLogo}  alt={"email logo"}/>
-                <a href="#">  <strong style={{ fontSize:"1.1em"}} className="purple" >: ghimirearjun15@gmail.com</strong> </a> </h6 > 
+                <a href="">  <strong style={{ fontSize:"1.1em"}} className="purple" >: ghimirearjun15@gmail.com</strong> </a> </h6 > 
               </li>
               <li className="social-icons">
               <h6>
                <img src={phoneLogo}  alt={"phone logo"}/>
-                <a href="#">  <strong style={{letterSpacing:"2px", fontSize:"1.2em"}} className="purple">: +1 (443)-355-7644</strong> </a> </h6 > 
+                <a href="">  <strong style={{letterSpacing:"2px", fontSize:"1.2em"}} className="purple">: +1 (443)-355-7644</strong> </a> </h6 > 
               </li>
               
             </ul>

@@ -29,7 +29,7 @@
 
 .card{
 
-    all: unset;
+    /* all: unset; */
     padding: 5px;
     align-self: center;
     width: 400px;
