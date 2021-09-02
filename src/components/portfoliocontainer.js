@@ -17,7 +17,7 @@ function PortfolioContainer(){
   return (
     <Router>
       <Preloader load={load} />
-      <div className="App pb-0" id={load ? "no-scroll" : "scroll"}>
+      <div className=" pb-0" id={load ? "no-scroll" : "scroll"}>
         <NavBar />
         <ScrollToTop />
         <Switch>

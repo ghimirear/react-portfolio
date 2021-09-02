@@ -35,7 +35,7 @@
 
 // export default A
 import React from"react";
-import PortfolioContainer from "./components/portfoliocontainer";
+import PortfolioContainer from "./components/Portfoliocontainer";
 function App (){
 <div className="App">
   <PortfolioContainer />
