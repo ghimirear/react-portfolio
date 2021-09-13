@@ -33,9 +33,6 @@ function Home() {
               </div>
               </Container>
             </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-            </Col>
           </Row>
         </div>
         <container fluid className="home-about-section " id="about">
