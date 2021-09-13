@@ -34,7 +34,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="home">
+        <Navbar.Brand>
           <span style={{letterSpacing:"5px", fontSize:"1.5rem"}}>AG</span>
         </Navbar.Brand>
         <Navbar.Toggle

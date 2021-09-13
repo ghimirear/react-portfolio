@@ -38,7 +38,7 @@ function Home() {
         <container fluid className="home-about-section " id="about">
       
         <Row>
-          <Col md={12}  xl={12} xxl={12} className="home-about-description">
+          <Col md={12} lg={12} xl={12} xxl={12} className="home-about-description">
             <Container className="mb-5 mt-5">
             <h1 style={{ fontSize: "2.6em" }}>
               <span className="purple"> About </span> Me
