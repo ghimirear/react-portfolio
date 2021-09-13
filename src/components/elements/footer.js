@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/footer.css"
 import "../elements/styles/home.css";
 import { Container, Col} from "react-bootstrap";
-import pdf from "../images/resume1.pdf";
+import pdf from "../images/arjunghimireresume.pdf";
 import icon from "../images/download.svg"
 function Footer (){
 return (
