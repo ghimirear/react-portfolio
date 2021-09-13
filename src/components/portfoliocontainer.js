@@ -15,20 +15,18 @@ function PortfolioContainer(){
     }, 1200);
   }, []);
   return (
-    <Router>
-      <Preloader load={load} />
-      <div className=" pb-0" id={load ? "no-scroll" : "scroll"}>
-        <NavBar />
-        <ScrollToTop />
-        <Switch>
-       <Home />
-        <Route exact path="/portfolio" > <Portfolio /> </Route> 
-        <Route exact path="/contact"> < Contact/> </Route>
-        </Switch>
-        <Footer />
-      </div>
+  <Router>
+    <Preloader load={load} />
+    <div className=" pb-0" id={load ? "no-scroll" : "scroll"}>
+      <NavBar />
+      <ScrollToTop />
+      <Home />
+      <Portfolio /> 
+      < Contact/> 
+      <Footer />
+    </div>
       
-    </Router>
+  </Router>
   );
 }
 export default PortfolioContainer;

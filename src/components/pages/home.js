@@ -47,17 +47,14 @@ function Home() {
               <span className="purple"> About </span> Me
             </h1>
             <p className="line-height-2" style={{fontFamily:"sans-serif, roboto, ", fontSize:"1.5em"}}>  
-                            Full-Stack Web Developer, recently earned 
+                            Full-Stack Web Developer, earned 
                              certificate from <i> The George Washington University</i> <br />
-                            in Full-Stack web development. Have done bachelor in  pharmacy from <br />
-                            <i>Chitwn Medical College, Nepal </i>   and I am in a transition to web development. <br/>
+                            in Full-Stack web development. I am in a transition to web development. <br/>
                             Seeking an oppertunity where I can apply new skillsets and grow  along with the company. <br/>
-                            Have experience in creating full stack app using <strong class="strong">Node, Express, React, MongoDB, Javascript, HTML and CSS.</strong> <br/>
+                            Have experience in creating full stack app using <strong className="strong">Node, Express, React, MongoDB, Javascript, HTML and CSS.</strong> <br/>
                              Enjoy working on both back end and front end of the application. Do visit my portfolio section for a <br />
                             representative  sample of technologies I've utilized in my projects throughout the bootcamp.</p>
 
-              
-          
               </Container>
           </Col>
 
@@ -65,7 +62,7 @@ function Home() {
         <Row>
           <Col md={12} xl={12} xxl={12} className="home-about-social align-self-left ">
             <h1>Stay Connected</h1>
-            <ul className="home-about-social-links d-flex flex-column mb-5">
+            <ul className="home-about-social-links d-flex flex-column mb-0">
               
               <li className="social-icons">
                
@@ -86,11 +83,7 @@ function Home() {
       
     </container>
 
-
       </Container>
-      <Container className="mb-5">
-          
-           </Container>
     </section>
   );
 }

@@ -1,22 +1,21 @@
 import React from "react";
 import "../elements/styles/contact.css"
 import{Card, Container} from "react-bootstrap";
-import Particle from "../elements/Particle";
+// import Particle from "../elements/Particle";
+import Newp from "../elements/Newp"
 import Tilt from "react-parallax-tilt";
 function Contact (){
 return(
    
-      <section>
-          
-        <Container fluid="true" className="home-section  align-self-center contact-section " style={{height:"100vh"}}>
-        <Particle style={{ ZIndex:"-99999"}}/>
-      
-     
+  <section id ="contact">
+           
+    <Container fluid="true" className="home-section  align-self-center contact-section " style={{height:"100vh"}}>
     <Container>
     
     <Card className=" card align-items-center align-self-center m-5 z-depth-1 " >
    
     <h1 className="purple text-uppercase mt-5">contact us</h1>
+    <Newp/>
     <div className="line"></div>
     <Tilt>
     <form className=" form contact-form mt-5" action="https://formspree.io/f/moqprajl" method="POST" > 

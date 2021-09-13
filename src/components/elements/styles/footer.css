@@ -105,3 +105,9 @@ footer {
         left: 0;
     }
 }
+@media (max-width:375px){
+    .social-media ul  {
+        align-items:left;
+        left: 0;
+    }
+}

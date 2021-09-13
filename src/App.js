@@ -22,7 +22,7 @@
 //         <NavBar />
 //         <ScrollToTop />
 //         <Switch>
-//           < Route  path ={["/", "*"]}> < Home />  </Route>
+//         < Route expect path="/"> < Home />  </Route>
 //         <Route exact path="/portfolio"  ><Portfolio />  </Route>
 //         <Route exact path="/contact"> <Contact /> </Route>
 //         </Switch >
@@ -33,12 +33,12 @@
 //   );
 // }
 
-// export default A
+// export default App
 import React from"react";
 import PortfolioContainer from "./components/Portfoliocontainer";
 function App (){
   return (
-    <div className="App">
+    <div>
   <PortfolioContainer />
 </div>
   )

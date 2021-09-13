@@ -22,13 +22,24 @@ html {
 .image-div{
 background: linear-gradient(
     to bottom left,
-    rgba(70, 0, 0, 0.982),
-    rgba(24, 13, 56, 0.904)
+    rgba(75, 4, 4, 0.982),
+    rgba(24, 8, 110, 0.904)
   );
 width: auto;
 
 }
+#home{
+  background: linear-gradient(
+    to bottom left,
+    rgba(75, 4, 4, 0.182),
+    rgba(24, 8, 110, 0.104)
+  );
+  background-image: url(../../images/photo-1477342620885-10e8a3790e30.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
+  
+}
 .button-primary{
     text-transform: uppercase;
     font-weight: 500;
@@ -155,7 +166,7 @@ width: auto;
       padding-bottom: 2em !important;
     }
     .home-about-section{
-      margin-bottom: 100px;
+      /* margin-bottom: 100px; */
     }
   }
   
@@ -183,7 +194,7 @@ width: auto;
     text-align: center !important;
     padding-top: 25px;
     color: white !important;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
   
   .home-about-social-links {
