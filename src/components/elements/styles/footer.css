@@ -20,7 +20,7 @@ footer {
 .footer-container ul{
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style-type: none;
 
 }
@@ -99,15 +99,23 @@ footer {
    background-color:black; 
 }
 
-@media (max-width:401px){
+@media (max-width:414px){
     .social-media ul  {
         align-items:left;
         left: 0;
+    }
+    footer{
+        align-items: initial;
     }
 }
 @media (max-width:375px){
     .social-media ul  {
         align-items:left;
         left: 0;
+    }
+    .social-media ul li {
+        margin-left: 0;
+        left: 0;
+        text-align: left;
     }
 }

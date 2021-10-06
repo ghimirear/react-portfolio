@@ -9,7 +9,7 @@ return (
     <section>
 <footer>
     <Col sm={12} md={12} lg={12} xl={12} xxl={12} style={{width:"100vw", margin:"0px" }} >
-       <Container className="container-fluid footer-container">
+       <Container fluid="true" className="container-fluid footer-container">
         <div className="social-media align-center justify-center co">
             <ul className="footer-list align-center justify-center">
                 <li><p>&copy;Arjun Ghimire 2021 </p></li>
