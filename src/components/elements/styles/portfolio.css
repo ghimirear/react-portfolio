@@ -7,6 +7,9 @@
     border-color: aqua;
     opacity: 0.9;
 }
+/* .card,::-webkit-scrollbar-thumb {
+    display: none;
+} */
 .description{
     float: right;
     position: relative;
@@ -52,6 +55,7 @@
     height:655px;
     overflow: hidden;
     overflow-y: scroll;
+
     margin-right: 10;
     margin-top: 10;
 }

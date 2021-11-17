@@ -32,8 +32,8 @@
     /* all: unset; */
     padding: 5px;
     align-self: center;
-    width: 400px;
-    height: 725px;
+    width: 683px;
+    height: auto;
     background: linear-gradient(
     to bottom left,
     rgb(58, 1, 1, 0.8999),
@@ -48,9 +48,9 @@
 }
 @media (max-width:375px){
 .card{
-    margin: 10px 15px ;
-    width: 100vw;
-    transform: translate(-10%, 0);
+    margin: 0 ;
+    width: 100%;
+    transform: translate(-15% 0);
     margin-bottom: 20px;
     height: auto;
     margin-left: 5px;

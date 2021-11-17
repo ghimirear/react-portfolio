@@ -1,7 +1,7 @@
 # react-portfolio
 # Table of Contents
 - [Description](#Description)
--[Technologies](#Technologies)
+- [Technologies](#Technologies)
 - [Installation](#Installation)
 - [Deployment](#Deployment)
 - [Screensgots](#Screenshoots)

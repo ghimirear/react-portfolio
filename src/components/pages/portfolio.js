@@ -41,7 +41,7 @@ function Portfolio(){
                 <Container fluid="true" className="d-flex flex-row flex-wrap mt-5 mb-5 ml-5">
               
                 {portfolios.map((portfolio) =>(
-                
+                <div className="card-container container-sm container ">
                 <Card className="card ml-sm-3 z-depth-1" key={portfolio.id}>
                     <div className="card-header">
                    <h3 className="card-title"> {portfolio.Title}</h3>
@@ -52,15 +52,16 @@ function Portfolio(){
                
                         </Tilt>
                          <p className="p-3 " >{portfolio.Description}</p>
-                     </div>
-                     <div  className="container align-items-center mb-2 z-depth-1">
-                         <h6><strong style={{letterSpacing:"2px", color:"#9901ff"}}>Technologies:</strong> { " " + portfolio.Technologies}</h6>
-                         <h6> <strong style={{color:"#9901ff"}} >Role:</strong> {portfolio.Role}</h6>
+                         <div  className="container align-items-center mb-2 z-depth-1">
+                         <h6><strong style={{letterSpacing:"2px", color:"#9901ff", fontSize:"1.5em"}}>Technologies:</strong> { " " + portfolio.Technologies}</h6>
+                         <h6> <strong style={{color:"#9901ff", fontSize:"1.5em"}} >Role:</strong> {portfolio.Role}</h6>
                          <a href={portfolio.GitHub} target="_blank"> <button className="button-primary ml-2 mr-2">code</button> </a>
                          <a href={portfolio.LiveLink} target="_blank"><button className="button-primary ml-2 mr-2">app</button> </a>
                      </div>
-                     </Card>
+                     </div>
                     
+                     </Card>
+                     </div>
                     ))}
                 </Container>
             </Container>

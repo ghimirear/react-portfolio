@@ -38,6 +38,7 @@ width: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position-x: 0;
 
   
 }
@@ -272,4 +273,10 @@ width: auto;
     .home-about-social{
       margin-bottom: 50%;
     }
+    .button-primary{
+      margin-top: 2px;
+      margin-bottom: 2px;
+      align-self: center;
+    }
+   
   }

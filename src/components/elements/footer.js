@@ -12,7 +12,8 @@ return (
        <Container fluid="true" className="container-fluid footer-container">
         <div className="social-media align-center justify-center co">
             <ul className="footer-list align-center justify-center">
-                <li><p>&copy;Arjun Ghimire 2021 </p></li>
+                {/* <li><p>&copy;Arjun Ghimire 2021 </p></li> */}
+                <li> </li>
                 <li> <a href="https://www.linkedin.com/in/arjun-ghimire-8291171b8/" target="_blank"><i className="fab fa-linkedin"></i></a></li>
                 <li> <a href="https://github.com/ghimirear" target="_blank" className="github-icon"><i className="fab fa-github"></i></a></li>
 

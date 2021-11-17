@@ -14,7 +14,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: auto;
-    padding: 10px;
+    /* padding: 10px; */
    
 }
 .footer-container ul{
@@ -112,10 +112,15 @@ footer {
     .social-media ul  {
         align-items:left;
         left: 0;
+        align-items: flex-start;
+        align-self: flex-start;
+        margin-left: 0;
+        padding-left: 0;
     }
     .social-media ul li {
         margin-left: 0;
         left: 0;
         text-align: left;
+        align-items: flex-start;
     }
 }

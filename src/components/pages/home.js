@@ -44,14 +44,9 @@ function Home() {
               <span className="purple"> About </span> Me
             </h1>
             <p className="line-height-2" style={{fontFamily:"sans-serif, roboto, ", fontSize:"1.5em"}}>  
-                            Full-Stack Web Developer, earned 
-                             certificate from <i> The George Washington University</i> <br />
-                            in Full-Stack web development. I am in a transition to web development. <br/>
-                            Seeking an oppertunity where I can apply new skillsets and grow  along with the company. <br/>
-                            Have experience in creating full stack app using <strong className="strong">Node, Express, React, MongoDB, Javascript, HTML and CSS.</strong> <br/>
-                             Enjoy working on both back end and front end of the application. Do visit my portfolio section for a <br />
-                            representative  sample of technologies I've utilized in my projects throughout the bootcamp.</p>
-
+                            Full-Stack Web Developer, Skilled in <span className="purple"> MERN </span> (MongoDB, Express.js, React.js and Node.js).
+                            
+            </p>
               </Container>
           </Col>
 
@@ -61,16 +56,17 @@ function Home() {
             <h1>Stay Connected</h1>
             <ul className="home-about-social-links d-flex flex-column mb-0">
               
-              <li className="social-icons">
+              <li className="social-icons" type="phone ">
                
                  <h6 classNmae="purple">
                <img src={emailLogo}  alt={"email logo"}/>
-                <a href="">  <strong style={{ fontSize:"1.1em"}} className="purple" >: ghimirearjun15@gmail.com</strong> </a> </h6 > 
-              </li>
+               <a href="mailto:ghimirearjun15@gmail.com">  <strong style={{ fontSize:"1.1em"}} className="purple" >: ghimirearjun15@gmail.com</strong></a>  </h6 > 
+                
+   </li>
               <li className="social-icons">
               <h6>
                <img src={phoneLogo}  alt={"phone logo"}/>
-                <a href="">  <strong style={{letterSpacing:"2px", fontSize:"1.2em"}} className="purple">: +1 (443)-355-7644</strong> </a> </h6 > 
+                <a href="tel:+1-443-355-7644">  <strong style={{letterSpacing:"2px", fontSize:"1.2em"}} className="purple">: +1 (443)-355-7644</strong> </a> </h6 > 
               </li>
               
             </ul>
